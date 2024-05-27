@@ -49,7 +49,7 @@ namespace digitalizingthetourismindusty
         private void communicateArticleDescriptionButton_Click(object sender, EventArgs e)
         {
             string hotelOrLodgingArticleDescription;
-            hotelOrLodgingArticleDescription = "hotelOrLodgingTextBox.Text" + (" ") + "classificationStandardsTextBox.Text" + (" ") + "hotelStandardRatesTextBox.Text";
+            hotelOrLodgingArticleDescription = hotelOrLodgingTextBox.Text + " " + classificationStandardsTextBox.Text + " " + hotelStandardRatesTextBox.Text;
             outputHotelOrLodgingLabel.Text = hotelOrLodgingArticleDescription;
         }
 
