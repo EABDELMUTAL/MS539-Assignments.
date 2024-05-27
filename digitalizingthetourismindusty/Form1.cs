@@ -52,5 +52,10 @@ namespace digitalizingthetourismindusty
             hotelOrLodgingArticleDescription = "hotelOrLodgingTextBox.Text" + (" ") + "classificationStandardsTextBox.Text" + (" ") + "hotelStandardRatesTextBox.Text";
             outputHotelOrLodgingLabel.Text = hotelOrLodgingArticleDescription;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

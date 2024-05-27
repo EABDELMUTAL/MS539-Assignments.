@@ -456,6 +456,7 @@
             this.Controls.Add(this.tourismLabel1);
             this.Name = "Form1";
             this.Text = "One-Stop Tourism Solutions and Services";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
