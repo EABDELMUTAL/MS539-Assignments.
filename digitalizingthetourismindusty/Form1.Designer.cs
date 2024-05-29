@@ -60,7 +60,13 @@
             this.exitButton = new System.Windows.Forms.Button();
             this.outputLogoLabel = new System.Windows.Forms.Label();
             this.communicateArticleDescriptionButton = new System.Windows.Forms.Button();
+            this.outputCompetitorFigure = new System.Windows.Forms.Label();
+            this.tourismLabel13 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // tourismLabel1
@@ -416,12 +422,59 @@
             this.communicateArticleDescriptionButton.UseVisualStyleBackColor = true;
             this.communicateArticleDescriptionButton.Click += new System.EventHandler(this.communicateArticleDescriptionButton_Click);
             // 
+            // outputCompetitorFigure
+            // 
+            this.outputCompetitorFigure.AutoSize = true;
+            this.outputCompetitorFigure.Location = new System.Drawing.Point(743, 604);
+            this.outputCompetitorFigure.Name = "outputCompetitorFigure";
+            this.outputCompetitorFigure.Size = new System.Drawing.Size(119, 13);
+            this.outputCompetitorFigure.TabIndex = 35;
+            this.outputCompetitorFigure.Text = "It will be a Real Number";
+            // 
+            // tourismLabel13
+            // 
+            this.tourismLabel13.AutoSize = true;
+            this.tourismLabel13.Location = new System.Drawing.Point(584, 601);
+            this.tourismLabel13.Name = "tourismLabel13";
+            this.tourismLabel13.Size = new System.Drawing.Size(129, 13);
+            this.tourismLabel13.TabIndex = 36;
+            this.tourismLabel13.Text = "Your Competitor\'s Number";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(881, 601);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(65, 26);
+            this.button1.TabIndex = 37;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(835, 271);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(167, 20);
+            this.numericUpDown1.TabIndex = 38;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(438, 485);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.TabIndex = 39;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1315, 660);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tourismLabel13);
+            this.Controls.Add(this.outputCompetitorFigure);
             this.Controls.Add(this.communicateArticleDescriptionButton);
             this.Controls.Add(this.outputLogoLabel);
             this.Controls.Add(this.exitButton);
@@ -458,6 +511,7 @@
             this.Text = "One-Stop Tourism Solutions and Services";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -497,6 +551,11 @@
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label outputLogoLabel;
         private System.Windows.Forms.Button communicateArticleDescriptionButton;
+        private System.Windows.Forms.Label outputCompetitorFigure;
+        private System.Windows.Forms.Label tourismLabel13;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
