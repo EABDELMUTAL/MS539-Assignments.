@@ -12,14 +12,11 @@ namespace digitalizingthetourismindusty
 {
     public partial class Form1 : Form
     {
+        public int occupiedRooms { get; private set; }
+
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void calculateGrossIncomeButton_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -56,6 +53,34 @@ namespace digitalizingthetourismindusty
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void averageDailyRoomRatesTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void calculateGrossIncomeButton_Click(object sender, EventArgs e)
+        {
+            int occupiedRooms;
+            double averageDailyRates;
+            double grossIncome;
+            occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
+            averageDailyRates = double.Parse(averageDailyRoomRatesTextBox.Text);
+            grossIncome = (int)occupiedRooms * averageDailyRates;
+            outputFormulaLabel2.Text = grossIncome.ToString();
+        }
+
+        private void initializeDaysOfWeekControls_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            {
+                ComboBox comboBoxDays = new ComboBox();
+                comboBoxDays.Items.AddRange(new string[]{"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"});
+                comboBoxDays.SelectedIndex = 0;
+                comboBoxDays.Location = new Point(10, 10);
+                this.Controls.Add(comboBoxDays);
+
+            }
         }
     }
 }

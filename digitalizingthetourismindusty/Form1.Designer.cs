@@ -65,6 +65,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.initializeDaysOfWeekControls = new System.Windows.Forms.ComboBox();
+            this.tourismLabel14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -197,15 +199,16 @@
             this.tourismLabel10.Name = "tourismLabel10";
             this.tourismLabel10.Size = new System.Drawing.Size(476, 20);
             this.tourismLabel10.TabIndex = 14;
-            this.tourismLabel10.Text = "Hotel or Lodging Gross Income calculated:";
+            this.tourismLabel10.Text = "Hotel or Lodging Average Gross Income calculated:";
             this.tourismLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // occupiedRoomsTotalTextBox
             // 
             this.occupiedRoomsTotalTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.occupiedRoomsTotalTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.occupiedRoomsTotalTextBox.Location = new System.Drawing.Point(587, 298);
             this.occupiedRoomsTotalTextBox.Name = "occupiedRoomsTotalTextBox";
-            this.occupiedRoomsTotalTextBox.Size = new System.Drawing.Size(226, 20);
+            this.occupiedRoomsTotalTextBox.Size = new System.Drawing.Size(226, 21);
             this.occupiedRoomsTotalTextBox.TabIndex = 13;
             // 
             // tourismLabel7
@@ -245,10 +248,12 @@
             // averageDailyRoomRatesTextBox
             // 
             this.averageDailyRoomRatesTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.averageDailyRoomRatesTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.averageDailyRoomRatesTextBox.Location = new System.Drawing.Point(587, 326);
             this.averageDailyRoomRatesTextBox.Name = "averageDailyRoomRatesTextBox";
-            this.averageDailyRoomRatesTextBox.Size = new System.Drawing.Size(226, 20);
+            this.averageDailyRoomRatesTextBox.Size = new System.Drawing.Size(226, 21);
             this.averageDailyRoomRatesTextBox.TabIndex = 19;
+            this.averageDailyRoomRatesTextBox.TextChanged += new System.EventHandler(this.averageDailyRoomRatesTextBox_TextChanged);
             // 
             // tourismLabel8
             // 
@@ -273,7 +278,7 @@
             this.tourismLabel11.Name = "tourismLabel11";
             this.tourismLabel11.Size = new System.Drawing.Size(476, 20);
             this.tourismLabel11.TabIndex = 20;
-            this.tourismLabel11.Text = "Hotel or Lodging Net Income calculated:";
+            this.tourismLabel11.Text = "Hotel or Lodging Average Net Income calculated:";
             this.tourismLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // outputHotelOrLodgingLabel
@@ -297,11 +302,12 @@
             // outputFormulaLabel2
             // 
             this.outputFormulaLabel2.BackColor = System.Drawing.Color.Red;
+            this.outputFormulaLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputFormulaLabel2.Location = new System.Drawing.Point(585, 383);
             this.outputFormulaLabel2.Name = "outputFormulaLabel2";
             this.outputFormulaLabel2.Size = new System.Drawing.Size(228, 20);
             this.outputFormulaLabel2.TabIndex = 24;
-            this.outputFormulaLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.outputFormulaLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // comboBox1
             // 
@@ -464,12 +470,36 @@
             this.listBox1.Size = new System.Drawing.Size(120, 95);
             this.listBox1.TabIndex = 39;
             // 
+            // initializeDaysOfWeekControls
+            // 
+            this.initializeDaysOfWeekControls.FormattingEnabled = true;
+            this.initializeDaysOfWeekControls.Location = new System.Drawing.Point(48, 76);
+            this.initializeDaysOfWeekControls.Name = "initializeDaysOfWeekControls";
+            this.initializeDaysOfWeekControls.Size = new System.Drawing.Size(225, 21);
+            this.initializeDaysOfWeekControls.TabIndex = 40;
+            this.initializeDaysOfWeekControls.SelectedIndexChanged += new System.EventHandler(this.initializeDaysOfWeekControls_SelectedIndexChanged);
+            // 
+            // tourismLabel14
+            // 
+            this.tourismLabel14.BackColor = System.Drawing.Color.White;
+            this.tourismLabel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tourismLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tourismLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.tourismLabel14.Location = new System.Drawing.Point(47, 36);
+            this.tourismLabel14.Name = "tourismLabel14";
+            this.tourismLabel14.Size = new System.Drawing.Size(226, 20);
+            this.tourismLabel14.TabIndex = 41;
+            this.tourismLabel14.Text = "Select Day of the Week:";
+            this.tourismLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1315, 660);
+            this.Controls.Add(this.tourismLabel14);
+            this.Controls.Add(this.initializeDaysOfWeekControls);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button1);
@@ -556,6 +586,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ComboBox initializeDaysOfWeekControls;
+        private System.Windows.Forms.Label tourismLabel14;
     }
 }
 
