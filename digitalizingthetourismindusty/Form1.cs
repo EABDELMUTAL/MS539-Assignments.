@@ -52,7 +52,7 @@ namespace digitalizingthetourismindusty
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //
         }
 
         private void averageDailyRoomRatesTextBox_TextChanged(object sender, EventArgs e)
